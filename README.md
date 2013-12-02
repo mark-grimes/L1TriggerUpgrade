@@ -1,7 +1,8 @@
 L1TriggerUpgrade
 ================
 
-Copy of what used to be UserCode/L1TriggerUpgrade in CVS.
+Copy of what used to be UserCode/L1TriggerUpgrade in CVS. This branch is the CVS exactly as
+it was with the CVS tag "jimb14May2013".
 
 To use inside a CMSSW installation:
 
