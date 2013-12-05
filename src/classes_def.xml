@@ -1,3 +1,4 @@
 <lcgdict>
 <class name="L1Analysis::L1AnalysisL1ExtraUpgradeDataFormat"/>
+<class name="L1Analysis::L1AnalysisL1TrackDataFormat"/>
 </lcgdict>
