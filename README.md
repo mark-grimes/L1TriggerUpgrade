@@ -7,5 +7,5 @@ it was with the CVS tag "jimb14May2013".
 To use inside a CMSSW installation:
 
     cd $CMSSW_BASE/src
-    git submodule add git@github.com:kknb1056/L1TriggerUpgrade.git UserCode/L1TriggerUpgrade
+    git submodule add git@github.com:cms-l1trigger-menustudies/L1TriggerUpgrade.git UserCode/L1TriggerUpgrade
     scram b
