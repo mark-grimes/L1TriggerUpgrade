@@ -20,6 +20,20 @@
 #include "DataFormats/L1Trigger/interface/L1HFRings.h"
 #include "DataFormats/L1GlobalTrigger/interface/L1GlobalTriggerReadoutRecord.h"
 
+#include "DataFormats/L1TrackTrigger/interface/L1TkMuonParticle.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkMuonParticleFwd.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TrackPrimaryVertex.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkEtMissParticle.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkEtMissParticleFwd.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkEmParticle.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkEmParticleFwd.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkElectronParticle.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkElectronParticleFwd.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkJetParticle.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkJetParticleFwd.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkHTMissParticle.h"
+#include "DataFormats/L1TrackTrigger/interface/L1TkHTMissParticleFwd.h"
+
 #include "L1AnalysisL1ExtraUpgradeDataFormat.h"
 
 namespace L1Analysis
@@ -40,6 +54,14 @@ namespace L1Analysis
     void SetMuon    (const edm::Handle<l1extra::L1MuonParticleCollection> muon,   unsigned maxL1Extra);
     void SetMet     (const edm::Handle<l1extra::L1EtMissParticleCollection> mets);
     void SetMht     (const edm::Handle<l1extra::L1EtMissParticleCollection> mhts);
+
+    // Add L1TrackTriggerObjects
+    void SetTkEM   (const edm::Handle<l1extra::L1TkEmParticleCollection>   tkEM,     unsigned maxL1Extra);
+    void SetTkEG   (const edm::Handle<l1extra::L1TkElectronParticleCollection>   tkEG,     unsigned maxL1Extra);
+    void SetTkIsoEG(const edm::Handle<l1extra::L1TkElectronParticleCollection>   tkIsoEG,     unsigned maxL1Extra);
+    void SetTkMuon (const edm::Handle<l1extra::L1TkMuonParticleCollection> tkMuon,   unsigned maxL1Extra);
+    void SetTkJet  (const edm::Handle<l1extra::L1TkJetParticleCollection>  tkJet,    unsigned maxL1Extra);
+    void SetTkMet  (const edm::Handle<l1extra::L1TkEtMissParticleCollection> tkMets);
 
     L1AnalysisL1ExtraUpgradeDataFormat * getData() {return &l1extra_;}
 
